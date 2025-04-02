@@ -7,7 +7,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Menu from '@mui/material/Menu';
 import { Button, Input } from '@mui/material';
-import { applyDiscount, clearCart, removeDiscount, removeFromCart } from '@/store/cartSlice';
+import { applyDiscount, removeDiscount, removeFromCart } from '@/store/cartSlice';
 import { X } from 'lucide-react';
 
 

@@ -13,7 +13,7 @@ const Home = async ({
   const { categories, sort }: any = await searchParams;
   const decodedString = decodeURIComponent(categories);
 
-  let query: any = {}
+  const query: any = {}
 
   let orderByClause: any = {}
 

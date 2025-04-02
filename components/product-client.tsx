@@ -14,6 +14,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { SyncLoader } from 'react-spinners'
 import { Button } from '@mui/material'
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 interface ProductClientProps {
     getProducts: Product[] | any
     initialSort?: string
@@ -98,7 +100,6 @@ const ProductClient = ({
         setPage(2)
     }, [decodedString, sort])
 
-    console.log(products.length)
 
     return (
         <div>

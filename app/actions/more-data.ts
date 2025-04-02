@@ -12,7 +12,7 @@ export const getMoreProduct = async (params: IProductParams) => {
   try {
     const { categories = "", sort, page } = params;
 
-    let query: any = {};
+    const query: any = {};
 
     let orderByClause: any = [];
 
