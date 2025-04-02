@@ -35,13 +35,13 @@ const SingleProductCleint = ({
                     <div className='flex flex-row lg:flex-col gap-3 shrink-0 justify-center lg:justify-start'>
                         {product.images.map((img: any, i: any) => (
                             <div onClick={() => handleTabImage(img)} className={twMerge(" transition-all duration-300 rounded-md border-2 border-transparent cursor-pointer", productImages == img && "border-2 border-[#E53E3E]")} key={i}>
-                                <img src={img} alt="image" className={("rounded-md siz-20 md:size-28 object-cover")} />
+                                <img src={img} alt="image" className={("rounded-md siz-20 aspect-square md:size-28 object-cover h-full w-full")} />
                             </div>
                         ))}
                     </div>
 
                     <div className=" relative">
-                        <ReactImageMagnify className='' {...{
+                        <ReactImageMagnify imageClassName="aspect-square rounded-md lg:aspect-auto" className='' {...{
                             smallImage: {
                                 alt: 'Wristwatch by Ted Baker London',
                                 isFluidWidth: true,

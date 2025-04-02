@@ -1,24 +1,53 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Demo
+
+Check out the live demo: [Roiser Shop](https://roiser-shop.vercel.app/)
+
 ## Getting Started
 
-First, run the development server:
+### How to Run on Local Server
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd <your-project-folder>
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+3. Add your `DATABASE_URL` from MongoDB Atlas in the `.env.local` file:
+   ```env
+   DATABASE_URL=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Discount Coupon
+
+Use the following discount code at checkout:
+**SAVE10**
 
 ## Learn More
 
