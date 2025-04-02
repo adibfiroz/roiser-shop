@@ -1,14 +1,10 @@
+import { PageProps } from '@/.next/types/app/layout'
 import HeaderNav from '@/components/header-nav'
 import SingleProductCleint from '@/components/single-product-cleint'
 import prismadb from '@/lib/prismadb'
 import React from 'react'
 
-const SingleProductPage = async ({
-    params
-}: {
-    params: { prodId: string }
-
-}) => {
+const SingleProductPage = async ({ params }: PageProps) => {
     const { prodId } = await params
 
     const getProduct = await prismadb.product.findUnique({
