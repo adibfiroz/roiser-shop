@@ -1,16 +1,13 @@
+import { PageProps } from "@/.next/types/app/layout";
 import HeaderNav from "@/components/header-nav";
 import ProductClient from "@/components/product-client";
 import SidebarFilters from "@/components/sidebar-filters";
 import prismadb from "@/lib/prismadb";
 
 
-const Home = async ({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | undefined };
-}) => {
+const Home = async ({ searchParams }: PageProps) => {
 
-  const { categories, sort }: any = await searchParams;
+  const { categories, sort } = await searchParams;
   const decodedString = decodeURIComponent(categories);
 
   const query: any = {}
