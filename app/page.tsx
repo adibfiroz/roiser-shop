@@ -1,4 +1,4 @@
-import { PageProps } from "@/.next/types/app/layout";
+import { PageProps } from "@/.next/types/app/page";
 import HeaderNav from "@/components/header-nav";
 import ProductClient from "@/components/product-client";
 import SidebarFilters from "@/components/sidebar-filters";
