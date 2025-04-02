@@ -1,4 +1,4 @@
-import { PageProps } from '@/.next/types/app/layout'
+import { PageProps } from '@/.next/types/app/page'
 import HeaderNav from '@/components/header-nav'
 import SingleProductCleint from '@/components/single-product-cleint'
 import prismadb from '@/lib/prismadb'
