@@ -2,6 +2,8 @@
 
 import prismadb from "@/lib/prismadb";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 interface IProductParams {
   categories?: string;
   sort?: string;
